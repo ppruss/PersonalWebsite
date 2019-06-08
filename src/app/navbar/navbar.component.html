@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+    <button mat-icon-button  [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu>
+      <button mat-menu-item>Home</button>
+      <button mat-menu-item>Impressum</button>
+      <button mat-menu-item>Kontakt</button>
+    </mat-menu>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+    <ul>
+      <li>
+          <a routerLink="/">Home</a>
+      </li>
+      <li>
+        <a routerLink="/about">Impressum</a>
+      </li>
+      <li>
+        <a routerLink="/contact">Kontakt</a>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>
