@@ -11,6 +11,8 @@ import { MaterialService } from './material.service';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component'
 
+import { Power2, TimelineMax, TweenMax } from 'gsap'
+
 @NgModule({
   declarations: [
     AppComponent,
