@@ -1,10 +1,10 @@
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 a:hover, a:active{
-    color: rgb(61, 197, 61);
+    color: rgb(70, 70, 70);
 }
 
 ul{
@@ -12,6 +12,18 @@ ul{
     display: flex;
 
     li{
-        margin: 0px 1rem;
+        margin: 0px 0.5rem;
+    }
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+}
+
+@media (min-width: 960px){
+    mat-toolbar.mat-toolbar{
+        background: none;
     }
 }

@@ -1,29 +1,49 @@
-.hero{
+.home{
+    display: grid;
+    grid-template-columns: auto;
     height: 100%;
-    background-image: url("/assets/images/hero.jpg");
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
-    height: 500px;
 
-    h1{
-        color: white;
-        background-color: rgba(68, 68, 68, 0.6);
-        border-radius: 1rem;
-        margin: 4rem;
-        padding: 1rem;
-        font-size: 5rem;
-        float: left;
+    section{
+        padding: 3rem;
+
+        h1, h2{
+            text-transform: uppercase;
+            margin: 0px;
+        }
+
+        h1{
+            font-size: 3rem;
+        }
+
+        h2{
+            font-size: 1.4rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        figure{
+            margin-left: 0px;
+        }
+    }
+
+    section.hero{
+        padding-top: 8rem;
+        background-image: url("/assets/images/hero.jpg");
+        background-size: cover;
+    }
+
+    section.about{
+        background-color: #EFE55B;
     }
 }
 
-.home{
-    text-align: center;
-}
-
-h2{
-    margin-top: 8rem;
-    font-size: 2rem;
+.primaryButton{
+    border-color: black;
+    border-style: solid;
 }
 
 small{
@@ -36,16 +56,31 @@ small{
 }
 
 .portrait{
-    width: 10rem;
+    width: 8rem;
     border-radius: 50%;
 }
 
 ul{
     list-style-type: none;
+    padding: 0px;
 }
 
-@media (max-width: 600px){
-    .hero h1{
-        font-size: 3rem;
+@media (min-width: 960px){
+    .home{
+        grid-template-columns: 70% auto;
+        grid-template-rows: 60% auto;
+        grid-template-areas:
+            "hero about"
+            "hero contact";
+    }
+
+    section{
+        display: grid;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+
+    section.hero{
+        grid-area: hero;
     }
 }

@@ -9,7 +9,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { MaterialService } from './material.service';
 import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component'
 
 @NgModule({
@@ -17,7 +16,6 @@ import { AboutComponent } from './about/about.component'
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    FooterComponent,
     AboutComponent
   ],
   imports: [
