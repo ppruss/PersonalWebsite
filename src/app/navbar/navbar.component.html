@@ -1,17 +1,18 @@
 <nav>
   <mat-toolbar>
-    <div fxHide.gt-sm>
+    <div class="hamburgerMenu" fxHide.gt-sm>
       <button mat-icon-button  [matMenuTriggerFor]="menu">
         <mat-icon>menu</mat-icon>
       </button>
       <mat-menu #menu>
-        <button mat-menu-item>Home</button>
-        <button mat-menu-item>Impressum</button>
-        <button mat-menu-item>Projekte</button>
-        <button mat-menu-item>Über mich</button>
+        <a routerLink="/" mat-menu-item>Home</a>
+        <a routerLink="/about" mat-menu-item>Impressum</a>
+        <a routerLink="/projects" mat-menu-item>Projekte</a>
+        <a routerLink="/profile" mat-menu-item>Über mich</a>
       </mat-menu>
     </div>
-    <div fxFlex fxLayout fxLayoutAlign="end" fxHide fxShow.gt-sm>
+
+    <div class="horizontalBar" fxFlex fxLayout fxLayoutAlign="end" fxHide fxShow.gt-sm>
       <ul>
         <li>
             <a routerLink="/">Home</a>

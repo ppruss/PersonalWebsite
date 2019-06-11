@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TimelineMax, Power1, Power2 } from 'gsap';
+import { TimelineMax, Power2 } from 'gsap';
 
 @Component({
   selector: 'app-home',
@@ -28,6 +28,6 @@ export class HomeComponent implements OnInit {
       opacity: 0,
       x: -40,
       ease: Power2.easeInOut
-    }, 0.2, "-=1");
+    }, 0.2, "-=1.5");
   }
 }
