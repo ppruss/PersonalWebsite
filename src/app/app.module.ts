@@ -9,14 +9,18 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { MaterialService } from './material.service';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component'
+import { AboutComponent } from './about/about.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ProfileComponent } from './profile/profile.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectsComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
